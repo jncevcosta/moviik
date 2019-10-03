@@ -1,0 +1,34 @@
+{
+  "name": "moviik",
+  "version": "1.0.0",
+  "description": "Moviik",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "db:reset": "knex migrate:rollback && knex migrate:latest && knex seed:run",
+    "test": "NODE_ENV=test mocha test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jncevcosta/moviik.git"
+  },
+  "author": "José Nuno Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jncevcosta/moviik/issues"
+  },
+  "homepage": "https://github.com/jncevcosta/moviik#readme",
+  "dependencies": {
+    "chai-http": "^4.3.0",
+    "faker": "^4.1.0",
+    "knex": "^0.19.4",
+    "koa": "^2.8.2",
+    "koa-body": "^4.1.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "mocha": "^6.2.1",
+    "objection": "^1.6.11",
+    "pg": "^7.12.1",
+    "sqlite3": "^4.1.0"
+  }
+}
