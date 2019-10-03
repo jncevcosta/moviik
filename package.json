@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/jncevcosta/moviik#readme",
   "dependencies": {
+    "bcrypt": "^3.0.6",
+    "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "faker": "^4.1.0",
     "knex": "^0.19.4",
@@ -28,7 +30,9 @@
     "koa-router": "^7.4.0",
     "mocha": "^6.2.1",
     "objection": "^1.6.11",
+    "objection-password": "^2.0.0",
     "pg": "^7.12.1",
+    "sqlite": "^3.0.3",
     "sqlite3": "^4.1.0"
   }
 }

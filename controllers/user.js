@@ -1,7 +1,6 @@
 const Router = require('koa-router');
-const knex = require('../core/knex');
 const koaBody = require('koa-body');
-const User = require('../models/user');
+const UserManager = require('../manager/user');
 
 const router = new Router({ prefix: '/users' });
 
@@ -14,7 +13,7 @@ router.get('/:id', async (ctx) => {
 });
 
 router.post('/', koaBody(), async (ctx) => {
-    ctx.response.body = await User.query().insert(ctx.request.body);
+    ctx.response.body = await UserManager.create(ctx.request.body);
 });
 
 router.patch('/:id', koaBody(), async (ctx) => {
