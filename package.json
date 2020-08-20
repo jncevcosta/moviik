@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jncevcosta/moviik#readme",
   "dependencies": {
-    "bcrypt": "^3.0.6",
+    "bcrypt": "^5.0.0",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
     "faker": "^4.1.0",
