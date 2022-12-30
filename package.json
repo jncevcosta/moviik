@@ -28,7 +28,7 @@
     "koa-body": "^4.1.1",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
-    "mocha": "^6.2.1",
+    "mocha": "^10.2.0",
     "objection": "^1.6.11",
     "objection-password": "^2.0.0",
     "pg": "^7.12.1",
